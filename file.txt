@@ -7,8 +7,14 @@
   },
   {
     "title": "Burger",
-    "price": 25,
+    "price": 30,
     "thumbnail": "https://cdn.nanalyze.com/uploads/2017/05/Burger-Future-Teaser.jpg",
     "id": 2
+  }
+  {
+    "title": "Burger",
+    "price": 28,
+    "thumbnail": "https://cdn.nanalyze.com/uploads/2017/05/Burger-Future-Teaser.jpg",
+    "id": 3
   }
 ]
