@@ -1,0 +1,11 @@
+En mi opinión y por lo poco que he trabajado con estos motores me he sentido muy cómoda con Pug y EJS
+
+Pug me permite realizar generar un código más sencillo sin tener que cerrar etiquetas y mejor visto visualmente hablando,
+aunque tomo muy en cuenta la funcionalidad y como no termino de conocer el cómo escribir bien en JavaScript, hay veces que me entran las
+dudas y termino buscando cómo se escribe bien.
+
+Por otro lado EJS es mucho más cómodo porque es exactamente el mismo estilo que html solo con la diferencia de la sintaxis para poder
+escribir JavaScript. Además tomo muy en cuenta los recursos que actualmente se estan utilizando, ya que me permiten mantenerme
+al día con las nuevas formas de armar códigos.
+
+Siendo completamente sincera, me ha parecido mucho mejor EJS.

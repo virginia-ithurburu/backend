@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/node-256.png" >
+    <title>EJS</title>    
+</head>
+<body>
+    <% if (productos.length) { %>
+        <div class="container">
+            <h2>Listado de productos</h2>  
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr class = " table-danger">  
+                                <th scope="col">ID</th>
+                                <th scope="col">Nombre</th> 
+                                <th scope="col">Precio</th> 
+                                <th scope="col">Imagen</th>   
+                            </tr>
+                        </thead>
+                        <tbody>
+            <% productos.forEach(elem => {  %>
+              <tr>
+                <th scope="row"><%-elem.id%></th>
+                <th scope="row"><%-elem.title%></th>
+                <th scope="row"><%-elem.price%></th>
+                <th scope="row"><img src="<%-elem.thumbnail%>" width="10%"/></th>
+              </tr>
+              <% } ) %>
+            </tbody>
+          </table>
+    <% } else { %>
+            <h2>Lamentablemente no se encontro ningun producto cargado</h2>
+            <% } %>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <button class="btn btn-primary" type="button" href="/api">Regresar al formulario</button> 
+                </div>
+            </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+    {{#if productos.length}}        
+                <div class="container">
+                    <h2>Listado de productos</h2>  
+                    <div class="row justify-content-center" style={display:"flex"}>
+                        <div class="col-8">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr class = " table-danger">  
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Nombre</th> 
+                                        <th scope="col">Precio</th> 
+                                        <th scope="col">Imagen</th>   
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                {{#each productos}}
+                                    <tr>
+                                        <th scope="row">{{this.id}}</th>
+                                        <th scope="row">{{this.title}}</th>
+                                        <th scope="row">{{this.price}}</th>
+                                        <th scope="row"><img src={{this.thumbnail}} width="10%"></th>
+                                    </tr>
+                                {{/each}} 
+                                </tbody> 
+                            </table>
+                        </div>
+        {{else}}
+                        <h2> Lamentablemente no se encontro ningun producto cargado </h2>
+                    </div>
+                </div>    
+    {{/if}}
+                <div class="container">
+                        <div class="row justify-content-center" style={display:"flex"}>
+                            <button class="btn btn-primary" type="button" href="/api">Regresar al formulario</button> 
+                        </div>
+                </div>
